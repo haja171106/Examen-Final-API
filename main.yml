@@ -1,0 +1,21 @@
+openapi: "3.1.0"
+info:
+  title: STD24042
+  description: "This is a specification of STD24042"
+  version: "1.0.0"
+servers:
+  - url: http://localhost:8000
+paths:
+  /ping:
+    get:
+      responses:
+        '200':
+          description: pong
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: pong
+
+  /cars:
+    post:
